@@ -14,6 +14,6 @@ def generate_ids(quantity: int = 2000) -> map:
     """
     try:
         digits = np.arange(1, quantity + 1, 1)
-        return map(lambda x: f"MP_{str(x).zfill(5)}", digits)
+        return map(lambda x: f"MT_{str(x).zfill(5)}", digits)
     except Exception as e:
         return f"Please use numbers: {e}"
