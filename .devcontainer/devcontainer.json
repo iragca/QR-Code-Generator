@@ -21,7 +21,8 @@
             "mechatroner.rainbow-csv",
             "qwtel.sqlite-viewer",
             "mathematic.vscode-pdf",
-            "ms-toolsai.jupyter"
+            "ms-toolsai.jupyter",
+            "dvirtz.parquet-viewer"
             ]
         }
     },
