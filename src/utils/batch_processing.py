@@ -26,9 +26,9 @@ def zip_batch(folder_names):
     """
 
     try:
-        timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = time.strftime("%Y-%m-%d %H-%M-%S")
 
-        with zipfile.ZipFile(f"batch-{timestamp}", 'w', zipfile.ZIP_DEFLATED) as zipf:
+        with zipfile.ZipFile(f"batch-{timestamp}.zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
             for folder in tqdm(folder_names, desc="Zipping folders"):
                 for root, dirs, files in os.walk(folder):
                     for file in files:
