@@ -35,9 +35,9 @@ Example output (Designed Jan 05, 2025. Design is subject to change.):
 
 <h2>Streamlined Generation using CLI</h2>
 
-The following instructions assumes that the current working directory is the root folder and have 'virtualenv' package install
+The following instructions assumes that the current working directory is the root folder and have 'virtualenv' package installed
 
-<div style="font-weight: bold; margin-bottom: 5px;">Installing 'virtualenv' using 'pip'</div>
+<div style="font-weight: bold; margin-bottom: 5px;">If you don't have 'virtualenv' installed, you can install it using 'pip'.</div>
 
 ```bash
 pip install virtualenv
