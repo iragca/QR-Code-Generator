@@ -27,8 +27,9 @@ def zip_batch(folder_names):
 
     try:
         timestamp = time.strftime("%Y-%m-%d %H-%M-%S")
+        filename = f"batch-{timestamp}.zip"
 
-        with zipfile.ZipFile(f"batch-{timestamp}.zip", 'w', zipfile.ZIP_DEFLATED) as zipf:
+        with zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
             for folder in tqdm(folder_names, desc="Zipping folders"):
                 for root, dirs, files in os.walk(folder):
                     for file in files:
@@ -37,3 +38,5 @@ def zip_batch(folder_names):
                                 os.path.join(folder, '..')))
     except Exception as e:
         print(f"{type(e).__name__}: Error in zipping files. {e}")
+    else:
+        print(f"{filename}: Zipping completed successfully.")

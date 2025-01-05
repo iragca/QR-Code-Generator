@@ -50,7 +50,9 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
 
 # Retrieve the data from the database
-conn = sqlite3.connect("../data/database.sqlite")
+db_path = "../data/database.sqlite"
+print(f"Reading data from '{db_path}'")
+conn = sqlite3.connect(db_path)
 cur = conn.cursor()
 data = pd.read_sql("SELECT * FROM keys", conn)
 
@@ -368,12 +370,5 @@ try:
 except Exception as e:
     print(f"{type(e).__name__}: Error in generating PDF files. {e}")
 
-try:
-    data.to_parquet(r"../data/data.parquet", index=False)
-    data.to_csv(r"../data/data.csv", index=False)
-except Exception as e:
-    print(f"{type(e).__name__}: Error in saving data. {e}")
-else:
-    print("Saved data to '../data/'")
-
 zip_batch(['qr_codes', 'pdfs', r'../data'])
+print("Done.")
