@@ -19,6 +19,7 @@ QR Code Generator for meal stubs using 256-bit AES encryption (prototype)
 
 <h2>Streamlined Generation</h2>
 Move your working directory to 'src'. Run the following command in the terminal.
+
 ```bash
 python batch_generate.py
 ```
