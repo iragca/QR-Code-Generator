@@ -258,6 +258,7 @@ def create_A4_batch(
             meal_stub.rotate(90)
 
             # Admit String
+            meal_stub.setFillColor(colors.black)
             meal_stub.setFont("Helvetica", 9)
             meal_stub.drawString(
                 x = inch_to_points(-0.055),
@@ -265,6 +266,7 @@ def create_A4_batch(
                 text = "1 MEAL STUB"
             )
 
+            meal_stub.setFillColor(colors.black)
             meal_stub.drawString(
                 x = inch_to_points(0.05),
                 y = inch_to_points(2.4),
@@ -308,6 +310,7 @@ def create_A4_batch(
             meal_stub.rotate(90)
 
             # Admit String
+            meal_stub.setFillColor(colors.black)
             meal_stub.setFont("Helvetica", 9)
             meal_stub.drawString(
                 x = inch_to_points(-0.055),
@@ -315,6 +318,7 @@ def create_A4_batch(
                 text = "1 MEAL STUB"
             )
 
+            meal_stub.setFillColor(colors.black)
             meal_stub.drawString(
                 x = inch_to_points(0.05),
                 y = inch_to_points(2.4),
