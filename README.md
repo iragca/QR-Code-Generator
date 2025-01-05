@@ -24,7 +24,7 @@ Example output (Designed Jan 05, 2025. Design is subject to change.):
 > src/pdf_testing.ipynb
 
 - Implementation of generating 2002 meal stubs inside PDF files
-- Encrypted IDs are encoded as QR codes (encryption keys remain hidden in the database to serve as authentication)
+- Encrypted IDs are encoded as QR codes (encryption keys remain hidden in the database to serve as authentication).
 - QR codes attached to meal stubs along with their corresponding unencrypted ID.
 - 26 meal stubs per PDF file. 13 per each column.
 
@@ -35,7 +35,7 @@ Example output (Designed Jan 05, 2025. Design is subject to change.):
 
 <h2>Streamlined Generation using CLI</h2>
 
-The following instructions assumes that the current working directory is the root folder and have 'virtualenv' package installed
+The following instructions assumes that the current working directory is the root folder and have 'virtualenv' package installed.
 
 <div style="font-weight: bold; margin-bottom: 5px;">If you don't have 'virtualenv' installed, you can install it using 'pip'.</div>
 
