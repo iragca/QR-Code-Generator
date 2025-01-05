@@ -6,3 +6,4 @@ polars
 cryptography
 numpy
 tqdm
+zipfile36
