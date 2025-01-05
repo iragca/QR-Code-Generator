@@ -1,12 +1,13 @@
 <h1 align="center">QR-Code-Generator</h1>
 
 This scripting project generates **unique AES 256-bit encrypted QR codes** for custom-designed **meal stubs**. The meal stubs are embedded in **PDF files**, making them ready for printing. 
+
 Tools mainly used:
 
 - Python
 - ReportLab
 
-Example output (Designed Jan 05, 2025. Design is ubject to change.):
+Example output (Designed Jan 05, 2025. Design is subject to change.):
 
 ![Meal Stubs](https://github.com/iragca/QR-Code-Generator/blob/main/docs/img/meal_stubs.png?raw=true)
 
