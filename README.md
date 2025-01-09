@@ -1,6 +1,6 @@
 <h1 align="center">QR-Code-Generator</h1>
 
-This scripting project generates **unique AES 256-bit encrypted QR codes** for custom-designed **meal stubs**. The meal stubs are embedded in **PDF files**, making them ready for printing. 
+This scripting project generates **QR codes** for custom-designed **meal stubs**. The meal stubs are embedded in **PDF files**, making them ready for printing. 
 
 Tools mainly used:
 
@@ -13,27 +13,13 @@ Example output (Designed Jan 05, 2025. Design is subject to change.):
 
 <h2>Project Structure</h2>
 
-> src/testing.ipynb
+> data/duckdb-implementation.ipynb
 
-- Contains the initial exploration of libraries needed.
-
-- Generating the ids with their encryption keys. 
-
-- The generated data are then put inside an sqlite database.
-
-> src/pdf_testing.ipynb
-
-- Implementation of generating 2002 meal stubs inside PDF files
-- Encrypted IDs are encoded as QR codes (encryption keys remain hidden in the database to serve as authentication).
-- QR codes attached to meal stubs along with their corresponding unencrypted ID.
-- 26 meal stubs per PDF file. 13 per each column.
-
-> src/batch_generate.py
-
-- Combines the functionalities of all code to enable streamlined generation.
-- Subsequent changes to the meal stub design must be manually written.
+DuckDB implementation of storing and generating of the generated IDs. Preceded by SQLite which is now unsupported and removed.
 
 <h2>Streamlined Generation using CLI</h2>
+
+> **ℹ️ Note:** One run script is not yet implemented after the move to DuckDB
 
 The following instructions assumes that the current working directory is the root folder and have 'virtualenv' package installed.
 
