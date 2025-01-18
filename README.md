@@ -1,6 +1,6 @@
 <h1 align="center">QR-Code-Generator</h1>
 
-This scripting project generates **QR codes** for custom-designed **meal stubs**. The meal stubs are embedded in **PDF files**, making them ready for printing. 
+This scripting project generates **QR codes** for custom-designed **meal stubs**. The 2000 meal stubs are embedded in **PDF files**, making them ready for printing. 
 
 Tools mainly used:
 
@@ -18,8 +18,6 @@ Example output (Designed Jan 05, 2025. Design is subject to change.):
 DuckDB implementation of storing and generating of the generated IDs. Preceded by SQLite which is now unsupported and removed.
 
 <h2>Streamlined Generation using CLI</h2>
-
-> **ℹ️ Note:** One run script is not yet implemented after the move to DuckDB
 
 The following instructions assumes that the current working directory is the root folder and have 'virtualenv' package installed.
 
